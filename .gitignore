@@ -1,0 +1,39 @@
+# Android build files
+/build/
+/app/build/
+/.gradle/
+/local.properties
+
+# IDE config
+/.idea/
+/*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Compiled classes
+*.class
+
+# Generated files
+*.apk
+*.dex
+*.log
+*.jar
+*.keystore
+
+# Caches
+.cxx/
+.externalNativeBuild/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+venv/
+.env
+
+# Lambda packages
+*.zip

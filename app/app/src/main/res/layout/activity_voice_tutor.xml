@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voice_tutor_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/meowImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sprite_1_256"
+        android:contentDescription="Character Avatar"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/speech_rate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speech speed"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp" />
+
+    <SeekBar
+        android:id="@+id/speech_rate_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progress="10"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnNewConversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Conversation" />
+
+    <!-- Conversazione migliorata -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversationRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/speak_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speak"
+        android:drawableStart="@android:drawable/ic_btn_speak_now"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>
